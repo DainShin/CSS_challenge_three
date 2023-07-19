@@ -1,0 +1,130 @@
+/* General Reset */ 
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Typography */ 
+
+/* body content */ 
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;   
+}
+
+/* headings */
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Rampart One', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p:has(> a) {
+    text-align: center; 
+}
+
+/* Layout & Appearance */
+/* The text will be in the center of the header */
+header {
+    height: 15vw;
+    background-color:#FF8360; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* marin: 0 auto is to put the contents in the center */
+/* The direction of the contents will be ordered vertically */
+
+.main-wrapper {
+    width: 80vw; 
+    margin: 0 auto;
+    border: 2px solid #999; 
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* padding is for the space around the contents */
+
+main section > div + p {
+    background-color: #3CDBD3;
+    padding: 1em;
+}
+
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;  
+}
+
+/* Two sections will be positioned vertically and it has a gap between them  */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* This is for putting in a row  */
+
+section:nth-child(1) {
+    display: flex;
+}
+
+/* This is for the direction of the elements and gaps among them */
+
+section:nth-child(2) {
+    display: flex;
+    gap: 1em;
+}
+
+/* footer */
+
+/* I set the footer tag to flex, to make their position in a row */
+
+footer {
+    display: flex;
+}
+
+footer p,
+footer a {
+    background-color:#7DCE82; 
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;  
+}
+
+/* To put the orange box first, I set a tag to the order: -2 */
+
+footer a {
+    background-color:#FF8360;
+    order: -2;
+}
+
+footer a:hover {
+    background-color: #9C528B;
+}
+
+/* To make the size proper, I set the p tag flex:2 */
+
+footer p {
+    text-align:center;
+    flex: 2;
+}
+
+
+
+
